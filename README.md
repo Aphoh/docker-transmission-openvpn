@@ -47,7 +47,7 @@ $ docker run --privileged  -d \
               -e "OPENVPN_USERNAME=user" \
               -e "OPENVPN_PASSWORD=pass" \
               -p 9091:9091 \
-              haugene/transmission-openvpn
+              aphoh/docker-transmission-openvpn
 ```
 
 You must set the environment variables `OPENVPN_PROVIDER`, `OPENVPN_USERNAME` and `OPENVPN_PASSWORD` to provide basic connection details.
