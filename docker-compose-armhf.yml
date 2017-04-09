@@ -14,7 +14,6 @@ services:
     - 8.8.8.8
     - 8.8.4.4
   volumes:
-    - /etc/localtime:/etc/localtime:ro
     - /your/storage/path/:/data
   environment:
     - OPENVPN_PROVIDER=PIA
@@ -32,5 +31,3 @@ services:
     - transmission
   ports:
     - "8080:8080"
-  volumes:
-    - /etc/localtime:/etc/localtime:ro

@@ -11,8 +11,7 @@ services:
     - 8.8.4.4
   volumes:
     - /etc/localtime:/etc/localtime:ro
-    - /your/storage/path/:/data
-  environment:
+environment:
     - OPENVPN_PROVIDER=PIA
     - OPENVPN_USERNAME=username
     - OPENVPN_PASSWORD=password
@@ -25,5 +24,3 @@ services:
     - transmission
   ports:
     - 8080:8080
-  volumes:
-    - /etc/localtime:/etc/localtime:ro

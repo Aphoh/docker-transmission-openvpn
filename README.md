@@ -1,5 +1,6 @@
 # Transmission with WebUI and OpenVPN
 Docker container which runs Transmission torrent client with WebUI while connecting to OpenVPN.
+This clone removes the /etc/localtime dependency for those having issues with it.
 It bundles certificates and configurations for the following VPN providers:
 
 | Provider Name                | Config Value |
@@ -41,7 +42,6 @@ To run the container use this command:
 ```
 $ docker run --privileged  -d \
               -v /your/storage/path/:/data \
-              -v /etc/localtime:/etc/localtime:ro \
               -e "OPENVPN_PROVIDER=PIA" \
               -e "OPENVPN_CONFIG=Netherlands" \
               -e "OPENVPN_USERNAME=user" \
